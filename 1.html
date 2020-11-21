@@ -31,7 +31,9 @@
 
         .list {
             list-style-image: url(lin.gif);
-        }
+            background-repeat: no-repeat;
+            list-style-position: inside;
+                  }
 
         p:first-letter {
             font-size: 1cm;
@@ -39,25 +41,21 @@
 
         }
 
-        .move:hover {
-            text-decoration: none;
-            color: red;
-            text-transform: uppercase;
+        .mn {
+            -webkit-transition: margin 1s;
+            -moz-transition: margin 1s;
+            -o-transition: margin 1s;
+            transition: margin 1s;
         }
-        a.mn:hover { 
-            padding-left: 16px;
-            -webkit-transition: background-image 2s ease-in-out;
-            transition: background-image 2s ease-in-out;
-        }
-        a.mn:hover::before
-        
-        a.mn::before {
-            content: "";
+
+        .asd {
             background-image: url(lin.gif);
             background-repeat: no-repeat;
-            opacity: 0;
         }
-           
+
+        .mn:hover {
+            margin-left: 50px;
+        }
     </style>
 </head>
 
@@ -71,18 +69,25 @@
     <li>text4</li>
 </ul>
 <p>Текст</p>
-<a href="ss.html">Текст меню 1 </a><br>
-<a href="ss.html">Текст меню 2 </a><br>
-<a class="mn" href="ss.html">Текст меню 3 </a><br>
-<a href="ss.html">Текст меню 1 </a><br>
-<a href="ss.html">Текст меню 2 </a><br>
-<a href="ss.html">Текст меню 3 </a><br>
-<a class="mn" href="ss.html">Текст меню 1 </a><br>
-<a href="ss.html">Текст меню 2 </a><br>
-<a href="ss.html">Текст меню 3 </a><br>
-<a href="ss.html">Текст меню 1 </a><br>
-<a href="ss.html">Текст меню 2 </a><br>
+<div class="asd">
+    <a href="ss.html">Текст меню 1 </a><br>
+    <a href="ss.html">Текст меню 2 </a><br>
+    <div class="asd"><a class="mn" href="ss.html">Текст меню 3 </a><br></div>
+    <a href="ss.html">Текст меню 1 </a><br>
+    <a href="ss.html">Текст меню 2 </a><br>
+    <a href="ss.html">Текст меню 3 </a><br>
+    <div class="asd"><a class="mn" href="ss.html">Текст меню 1 </a><br></div>
+    <a href="ss.html">Текст меню 2 </a><br>
+    <a href="ss.html">Текст меню 3 </a><br>
+    <a href="ss.html">Текст меню 1 </a><br>
+    <a href="ss.html">Текст меню 2 </a><br>
 </div>
+<ul class="list">
+    <li><a href="ss.html">Текст меню 1 </a></li>
+    <li><a href="ss.html">Текст меню 2 </a><br></li>
+    <li><a class="mn" href="ss.html">Текст меню 3 </a><br></li>
+   
+</ul>
 
 
 
