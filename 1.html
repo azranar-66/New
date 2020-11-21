@@ -38,11 +38,26 @@
             color: red;
 
         }
-        .header {
+
+        .move:hover {
+            text-decoration: none;
+            color: red;
+            text-transform: uppercase;
+        }
+        a.mn:hover { 
+            padding-left: 16px;
+            -webkit-transition: background-image 2s ease-in-out;
+            transition: background-image 2s ease-in-out;
+        }
+        a.mn:hover::before
+        
+        a.mn::before {
+            content: "";
             background-image: url(lin.gif);
             background-repeat: no-repeat;
-            text-indent: 18px;
+            opacity: 0;
         }
+           
     </style>
 </head>
 
@@ -56,23 +71,18 @@
     <li>text4</li>
 </ul>
 <p>Текст</p>
-
+<a href="ss.html">Текст меню 1 </a><br>
+<a href="ss.html">Текст меню 2 </a><br>
+<a class="mn" href="ss.html">Текст меню 3 </a><br>
 <a href="ss.html">Текст меню 1 </a><br>
 <a href="ss.html">Текст меню 2 </a><br>
 <a href="ss.html">Текст меню 3 </a><br>
-<div class="header">
-    <a href="ss.html">Текст меню 1 </a><br>
+<a class="mn" href="ss.html">Текст меню 1 </a><br>
+<a href="ss.html">Текст меню 2 </a><br>
+<a href="ss.html">Текст меню 3 </a><br>
+<a href="ss.html">Текст меню 1 </a><br>
+<a href="ss.html">Текст меню 2 </a><br>
 </div>
-<a href="ss.html">Текст меню 2 </a><br>
-<a href="ss.html">Текст меню 3 </a><br>
-<a href="ss.html">Текст меню 1 </a><br>
-<div class="header">
-<a href="ss.html">Текст меню 2 </a><br>
-</div>
-<a href="ss.html">Текст меню 3 </a><br>
-<a href="ss.html">Текст меню 1 </a><br>
-<a href="ss.html">Текст меню 2 </a><br>
-<div class="header"><a href="ss.html">Текст меню 3 </a><br></div>
 
 
 
