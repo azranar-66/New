@@ -29,32 +29,57 @@
 
         }
 
-        .list {
-            list-style-image: url(lin.gif);
-            background-repeat: no-repeat;
-            list-style-position: inside;
-                  }
-
         p:first-letter {
             font-size: 1cm;
             color: red;
 
         }
 
-        .mn {
-            -webkit-transition: margin 1s;
-            -moz-transition: margin 1s;
-            -o-transition: margin 1s;
-            transition: margin 1s;
+        .lst {
+            list-style-image: url(lin.gif);
         }
 
-        .asd {
+
+        a.meny:hover {
+            padding-left: 20px;
+            -webkit-transition: background-image 4s ease-out;
+            -moz-transition: background-image 4s ease-out;
+            -o-transition: background-image 4s ease-out;
+            transition: background-image 4s ease-out;
+
+        }
+
+        a.meny:hover::before {
+            opacity: 1;
+            transition: 2s;
+        }
+
+        a.meny::before {
+            content: "\00a0\00a0\00a0";
             background-image: url(lin.gif);
             background-repeat: no-repeat;
+            opacity: 0;
         }
 
-        .mn:hover {
-            margin-left: 50px;
+        a.menytop:hover {
+            padding-top: 20px;
+            -webkit-transition: background-image 4s ease-out;
+            -moz-transition: background-image 4s ease-out;
+            -o-transition: background-image 4s ease-out;
+            transition: background-image 4s ease-out;
+            
+        }
+
+        a.menytop:hover::before {
+            opacity: 1;
+            transition: 2s;
+        }
+
+        a.menytop::before {
+            content: ;
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            opacity: 0;
         }
     </style>
 </head>
@@ -62,32 +87,21 @@
 <body></body>
 <input class="text" type="text" value="123456"><br> <br>
 <input class="submit" type="text" value="Отправить">
-<ul class="list">
+<ul class="lst">
     <li>text1</li>
     <li>text2</li>
     <li>text3</li>
     <li>text4</li>
 </ul>
 <p>Текст</p>
-<div class="asd">
-    <a href="ss.html">Текст меню 1 </a><br>
-    <a href="ss.html">Текст меню 2 </a><br>
-    <div class="asd"><a class="mn" href="ss.html">Текст меню 3 </a><br></div>
-    <a href="ss.html">Текст меню 1 </a><br>
-    <a href="ss.html">Текст меню 2 </a><br>
-    <a href="ss.html">Текст меню 3 </a><br>
-    <div class="asd"><a class="mn" href="ss.html">Текст меню 1 </a><br></div>
-    <a href="ss.html">Текст меню 2 </a><br>
-    <a href="ss.html">Текст меню 3 </a><br>
-    <a href="ss.html">Текст меню 1 </a><br>
-    <a href="ss.html">Текст меню 2 </a><br>
-</div>
-<ul class="list">
-    <li><a href="ss.html">Текст меню 1 </a></li>
-    <li><a href="ss.html">Текст меню 2 </a><br></li>
-    <li><a class="mn" href="ss.html">Текст меню 3 </a><br></li>
-   
-</ul>
+<a class="meny" href="ss.html"> Текст меню 1 </a><br>
+<a class="meny" href="ss.html"> Текст меню 2 </a><br>
+<a class="meny" href="ss.html"> Текст меню 3 </a><br><br>
+
+
+<a class="menytop" href="ss.html"> Текст меню 1 </a>
+<a class="menytop" href="ss.html"> Текст меню 2 </a>
+<a class="menytop" href="ss.html"> Текст меню 3 </a>
 
 
 
