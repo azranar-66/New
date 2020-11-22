@@ -61,24 +61,29 @@
             opacity: 0;
         }
 
-        a.menytop:hover {
-            padding-top: 20px;
-            -webkit-transition: background-image 4s ease-out;
-            -moz-transition: background-image 4s ease-out;
-            -o-transition: background-image 4s ease-out;
-            transition: background-image 4s ease-out;
-            
+        a.menytop {
+            position: relative;
+            top: 0pt;
+
         }
 
+        a.menytop:hover {
+            top: 20px;
+
+            transition: 2s ease-out;
+          
+        }
         a.menytop:hover::before {
             opacity: 1;
             transition: 2s;
+            
         }
 
         a.menytop::before {
-            content: ;
+            content: "\00a0\00a0\00a0";            
             background-image: url(lin.gif);
             background-repeat: no-repeat;
+            background-position: center;
             opacity: 0;
         }
     </style>
@@ -93,10 +98,10 @@
     <li>text3</li>
     <li>text4</li>
 </ul>
-<p>Текст</p>
 <a class="meny" href="ss.html"> Текст меню 1 </a><br>
 <a class="meny" href="ss.html"> Текст меню 2 </a><br>
 <a class="meny" href="ss.html"> Текст меню 3 </a><br><br>
+
 
 
 <a class="menytop" href="ss.html"> Текст меню 1 </a>
