@@ -60,33 +60,30 @@
             background-repeat: no-repeat;
             opacity: 0;
         }
-
-        .blok {
-            margin: 0 auto;
-            padding: center;
-            text-align: center;
-        }
-    
-            
-
-        .move {
+        .menytop {
             position: relative;
-            transition: 1s ease-in-out;
+            top: 0pt;
 
         }
 
-        .move:hover {
-            transform: translate(15px);
-
+        .menytop:hover {
+            top: 20px;
+            transition: 2s ease-out;
+          
         }
+
+        .menytop:hover::before {
+            opacity: 1;
+            transition: 2s;
+        }
+
+        .menytop::before {
+            content: "\00a0\00a0\00a0";
+            background-image: url(lin.gif);
+            background-repeat: no-repeat;
+            background-position: center;
+            opacity: 0;
         
-        img {
-            display: none;  
-
-        }
-
-        .lingif:hover {
-        opacity: 1;
         }
        
     </style>
@@ -106,11 +103,9 @@
 <a class="meny" href="ss.html"> Текст меню 3 </a><br><br>
 
 
-<div class="blok">
-<a class="move down" href="ss.html">Текст меню 1<img class="lingif" src="lin.gif"> </a> 
-<a class="move down" href="ss.html"> Текст меню 2 <img class="lingif" src="lin.gif"></a>
-<a class="move down" href="ss.html"> Текст меню 3 <img class="lingif" src="lin.gif"></a>
-</div>
+<a class="menytop" href="ss.html"> Текст меню 1 </a>
+<a class="menytop" href="ss.html"> Текст меню 2 </a>
+<a class="menytop" href="ss.html"> Текст меню 3 </a>
 
 
 
