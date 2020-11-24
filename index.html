@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <style type="text/css">
+       img {
+            width: 40px;
+            height: 40px;
+            display: block;
+            padding: 0 25px;
+            opacity: 0;
+        }
+
+        img:hover {
+            opacity: 1;
+        }
+
+        .move {
+            float: left;
+            margin: 0 15px;
+            color: red;
+            transition: 1s;
+        }
+
+        .move:hover {
+            color: aqua;
+            transform: translateY(10px);
+        }
+        .move::before {
+            content: "";
+            
+            opacity: 0;
+        }
+        .move:hover::before {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="move">
+        <img src="Pthw.gif" alt="">
+        <a class="meny" href="ss.html">Текст меню 1</a>
+    </div>
+    <div class="move">
+        <img src="Pthw.gif" alt="">
+        <a class="meny" href="ss.html">Текст меню 2</a>
+    </div>
+    <div class="move">
+        <img src="Pthw.gif" alt="">
+        <a class="meny" href="ss.html">Текст меню 3</a>
+    </div>
+</body>
+
+
+
+
+
+
+
+</body>
+
+</html>

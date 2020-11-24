@@ -49,54 +49,46 @@
 
         }
 
-        a.meny:hover::before {
+        .meny:hover::before {
             opacity: 1;
             transition: 2s;
         }
 
-        a.meny::before {
+        .meny::before {
             content: "\00a0\00a0\00a0";
             background-image: url(lin.gif);
             background-repeat: no-repeat;
             opacity: 0;
         }
 
-
-        .gif {
-            
-            left: 50%;
-            
-
+        .blok {
+            margin: 0 auto;
+            padding: center;
+            text-align: center;
         }
+    
+            
 
-        .gif:hover {
-        
-        }
-
-        .menytop {
+        .move {
             position: relative;
-            top: 0pt;
+            transition: 1s ease-in-out;
 
         }
 
-        .menytop:hover {
-            top: 20px;
+        .move:hover {
+            transform: translate(15px);
 
-            transition: 2s ease-out;
+        }
+        
+        img {
+            display: none;  
 
         }
 
-        .menytop:hover::before {
-            opacity: 1;
-            transition: 2s;
-
+        .lingif:hover {
+        opacity: 1;
         }
-
-        .menytop::before {
-            content: "\00a0\00a0\00a0";
-
-            opacity: 0;
-        }
+       
     </style>
 </head>
 
@@ -114,10 +106,11 @@
 <a class="meny" href="ss.html"> Текст меню 3 </a><br><br>
 
 
-<span class="gif"><img src="lin.gif"></span><a class="menytop" href="ss.html">Текст меню 1 </a> 
-<a class="menytop" href="ss.html"> Текст меню 2 </a><span class="gif"><img src="lin.gif"></span>
-<a class="menytop" href="ss.html"> Текст меню 3 </a><span class="gif"><img src="lin.gif"></span>
-
+<div class="blok">
+<a class="move down" href="ss.html">Текст меню 1<img class="lingif" src="lin.gif"> </a> 
+<a class="move down" href="ss.html"> Текст меню 2 <img class="lingif" src="lin.gif"></a>
+<a class="move down" href="ss.html"> Текст меню 3 <img class="lingif" src="lin.gif"></a>
+</div>
 
 
 
