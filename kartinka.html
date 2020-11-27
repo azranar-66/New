@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        :root {
+            --img-size: 500px;
+        }
+
+        .picture img {
+            width: calc(var(--img-size) / 10);
+            filter: grayscale(100%);
+            border: 10px red double;
+            box-shadow: 0px 0px 10px 10px black;
+            }
+
+        }
+
+        .picture img:hover {
+            width: var(--img-size);
+            transition: 2s linear;
+            filter: grayscale(0%);
+        }
+
+        .picture {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="picture">
+        <p><img src="kotenok.jpg" alt="name">
+        <img src="sobaka.jpg" alt="name">
+        <img src="ribka.jpg" alt="name">
+        <img src="kotenok.jpg" alt="name">
+        <img src="sobaka.jpg" alt="name"></p></div>
+</html>
